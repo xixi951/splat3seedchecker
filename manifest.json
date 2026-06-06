@@ -1,6 +1,6 @@
 {
-  "short_name": "Splat 3 Seed Checker",
-  "name": "Seed Checker and Calculator for Splatoon 3",
+  "short_name": "Splat 3 Self-Host",
+  "name": "Self-hosted Seed Checker and Calculator for Splatoon 3",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#0d1117",
+  "background_color": "#f5f7fa"
 }

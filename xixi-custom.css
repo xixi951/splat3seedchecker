@@ -1,0 +1,142 @@
+:root {
+  --background: #f5f7fa;
+  --wrapper-background: #ffffff;
+  --title-bg-color: #eef3f8;
+  --title-color: #263241;
+  --text-primary: #17202a;
+  --text-secondary: #006adc;
+  --border-color: #d8e0e8;
+  --button-color: #0077b6;
+  --button-color-hover: #005f8f;
+}
+
+[data-theme="dark"] {
+  --background: #151a20;
+  --wrapper-background: #0d1117;
+  --title-bg-color: #171e27;
+  --title-color: #d7dee8;
+  --text-primary: #f1f5f9;
+  --text-secondary: #54c6eb;
+  --border-color: #2b3542;
+  --button-color: #0096c7;
+  --button-color-hover: #0a789c;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-width: 320px;
+}
+
+a {
+  text-underline-offset: 0.18em;
+}
+
+[class*="_CardDark"] a,
+[class*="_cardWrapper"] a {
+  color: #bff3ff;
+  font-weight: 600;
+}
+
+[class*="_CardDark"] a:hover,
+[class*="_cardWrapper"] a:hover {
+  color: #ffffff;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(0, 150, 199, 0.35);
+  outline-offset: 2px;
+}
+
+.Layout_Content__upPLk {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: clamp(1rem, 3vw, 3rem);
+}
+
+.Layout_Nav__QFsSS li {
+  margin: 12px 16px;
+}
+
+[class*="_Wrapper"],
+[class*="_WrapperContent"],
+[class*="_SettingsContent"],
+[class*="_Content__"],
+[class*="_WrapperNoScroll"] {
+  border-radius: 8px !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06), 0 10px 28px rgba(15, 23, 42, 0.06);
+}
+
+button,
+[class*="_Button__"] {
+  border-radius: 6px !important;
+  min-height: 38px;
+}
+
+input,
+select,
+textarea {
+  min-height: 38px;
+}
+
+table {
+  overflow-wrap: anywhere;
+}
+
+img {
+  max-width: 100%;
+}
+
+[data-xixi-private-promo="hidden"] {
+  display: none !important;
+}
+
+@media (max-width: 720px) {
+  .Layout_Content__upPLk {
+    padding: 0.75rem 0.6rem 2rem;
+  }
+
+  .Layout_Content__upPLk h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .Layout_Nav__QFsSS li {
+    margin: 6px 8px;
+  }
+
+  [class*="_Wrapper"],
+  [class*="_WrapperContent"],
+  [class*="_SettingsContent"],
+  [class*="_Content__"],
+  [class*="_WrapperNoScroll"] {
+    padding: 12px !important;
+  }
+
+  [class*="_InputWrapper"],
+  [class*="_Wrapper__BcCs2"] {
+    flex-direction: column;
+  }
+
+  [class*="_Title__"] {
+    width: 100% !important;
+  }
+
+  [class*="_Entry__"] {
+    gap: 12px !important;
+  }
+}
