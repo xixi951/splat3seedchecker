@@ -1,15 +1,16 @@
 (function () {
   "use strict";
 
-  var replayLookupBase = "http://8.219.115.201";
+  var bundledReplayLookupBase = "http://8.219.115.201";
+  var defaultReplayLookupBase = "https://api.8-219-115-201.sslip.io";
   var configuredBase = new URLSearchParams(window.location.search).get("api") ||
     window.SPLAT3_REPLAY_LOOKUP_BASE ||
-    replayLookupBase;
+    defaultReplayLookupBase;
 
   function rewriteUrl(value) {
     if (typeof value !== "string") return value;
-    if (value.indexOf(replayLookupBase) === 0) {
-      return configuredBase.replace(/\/$/, "") + value.slice(replayLookupBase.length);
+    if (value.indexOf(bundledReplayLookupBase) === 0) {
+      return configuredBase.replace(/\/$/, "") + value.slice(bundledReplayLookupBase.length);
     }
     return value;
   }
