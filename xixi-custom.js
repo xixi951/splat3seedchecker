@@ -2,7 +2,7 @@
   "use strict";
 
   var bundledReplayLookupBase = "http://8.219.115.201";
-  var defaultReplayLookupBase = "https://api.8-219-115-201.sslip.io";
+  var defaultReplayLookupBase = "https://api.xixi-splat.com";
   var configuredBase = new URLSearchParams(window.location.search).get("api") ||
     window.SPLAT3_REPLAY_LOOKUP_BASE ||
     defaultReplayLookupBase;
