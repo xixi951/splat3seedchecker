@@ -97,12 +97,19 @@ table {
   overflow-wrap: anywhere;
 }
 
-img {
-  max-width: 100%;
-}
-
 [data-xixi-private-promo="hidden"] {
   display: none !important;
+}
+
+[class*="SeedLister_container"] img {
+  max-width: none !important;
+}
+
+[class*="Tutorial_Content"] img,
+[class*="NamePlateBg_BannerImage"],
+[class*="GearImage"] img,
+[class*="CardDark"] img {
+  max-width: 100%;
 }
 
 @media (max-width: 720px) {
